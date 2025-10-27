@@ -11,7 +11,7 @@ function App() {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="dark:!bg-[#0e1a2b] flex flex-col gap-32 min-h-screen max-w-screen overflow-x-hidden">
+    <div className="dark:!bg-[#0e1a2b] flex flex-col gap-28 min-h-screen max-w-screen overflow-x-hidden">
       <NavbarSimple />
       <Profile />
       <Work />
