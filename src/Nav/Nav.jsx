@@ -60,19 +60,21 @@ const NavList = ({ darkMode, setDarkMode }) => {
           </a>
         </Typography>
       ))}
-      <li>
-        <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-      </li>
-      <li>
-        <a href="/Mustafa_Tarek_CV.pdf" download>
-          <Button
-            variant="filled"
-            className="bg-[#0e1a2b] dark:bg-[#1e3b66] dark:!text-white hover:scale-105 transition-all duration-200"
-          >
-            Download CV
-          </Button>
-        </a>
-      </li>
+      <div className="flex flex-row items-center justify-center gap-32">
+        <li>
+          <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+        </li>
+        <li>
+          <a href="/Mustafa_Tarek_CV.pdf" download>
+            <Button
+              variant="filled"
+              className="bg-[#0e1a2b] dark:bg-[#1e3b66] dark:!text-white hover:scale-105 transition-all duration-200"
+            >
+              Download CV
+            </Button>
+          </a>
+        </li>
+      </div>
     </ul>
   );
 };
