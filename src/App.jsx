@@ -1,0 +1,22 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import NavbarSimple from "./Nav/Nav";
+import Profile from "./About/Profile";
+import Work from "./Work/Work";
+import "./index.css";
+
+function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  return (
+    <div className="dark:!bg-[#0e1a2b] flex flex-col gap-32 min-h-screen max-w-screen overflow-x-hidden">
+      <NavbarSimple />
+      <Profile />
+      <Work />
+    </div>
+  );
+}
+
+export default App;
