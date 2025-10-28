@@ -4,7 +4,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Profile = () => {
   return (
-    <div className="flex items-center justify-center  sm:px-8 md:px-16 bg-white dark:!bg-[#0e1a2b]">
+    <div
+      className="flex items-center justify-center sm:px-8 md:px-16 bg-white dark:!bg-[#0e1a2b] pt-32"
+      id="about"
+    >
       <div className="flex flex-col-reverse items-center justify-center max-w-6xl gap-10 md:flex-row">
         <div
           className="flex flex-col flex-1 text-center md:text-left"

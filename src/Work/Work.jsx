@@ -14,6 +14,7 @@ const Work = () => {
   return (
     <div
       className="flex flex-col items-center justify-center w-screen gap-12 overflow-x-hidden"
+      id="work"
       data-aos="zoom-in-up"
     >
       <Typography

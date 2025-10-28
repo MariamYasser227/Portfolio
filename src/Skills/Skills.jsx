@@ -53,7 +53,10 @@ const Skills = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-12 px-4 py-8">
+    <div
+      className="flex flex-col items-center justify-center w-full gap-12 px-4 py-8"
+      id="skills"
+    >
       <Typography
         variant="h1"
         className="mb-1 !text-[#0e1a2b] dark:!text-white text-3xl sm:text-4xl md:text-5xl lg:text-5xl"
@@ -62,7 +65,7 @@ const Skills = () => {
         Skills
       </Typography>
       <div
-        className="grid grid-cols-3 gap-6 sm:grid-cols-8 sm:gap-6"
+        className="grid grid-cols-3 gap-6 sm:grid-cols-5 md:grid-cols-8 sm:gap-6"
         data-aos="zoom-in-down"
       >
         {skills.map((skill, index) => {

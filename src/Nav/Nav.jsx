@@ -5,10 +5,10 @@ import {
   Collapse,
   Typography,
   IconButton,
+  Button,
 } from "@material-tailwind/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Button } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { LuSunMedium } from "react-icons/lu";
 import { IoMoonOutline } from "react-icons/io5";
@@ -21,6 +21,7 @@ const ThemeToggle = ({ darkMode, setDarkMode }) => {
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -42,25 +43,42 @@ const ThemeToggle = ({ darkMode, setDarkMode }) => {
   );
 };
 
-const NavList = ({ darkMode, setDarkMode }) => {
+const NavList = ({ darkMode, setDarkMode, closeNav }) => {
+  const sections = [
+    { name: "About Me", id: "about" },
+    { name: "Work Experience", id: "work" },
+    { name: "Skills", id: "skills" },
+    { name: "Projects", id: "projects" },
+    { name: "Contact", id: "contact" },
+  ];
+
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      if (closeNav) closeNav();
+    }
+  };
+
   return (
     <ul className="flex flex-col gap-2 my-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-10">
-      {["About Me", "Work Experience", "Skills", "Contact"].map((item) => (
+      {sections.map((section) => (
         <Typography
-          key={item}
+          key={section.id}
           as="li"
           variant="small"
           className="p-1 font-medium"
         >
-          <a
-            href="#"
-            className="flex items-center text-lg  !text-[#0e1a2b] dark:!text-white hover:!text-[#1e3b66] dark:hover:!text-[#a3c2d9] hover:scale-110 transition-all duration-200"
+          <button
+            onClick={() => handleScroll(section.id)}
+            className="flex items-center text-lg !text-[#0e1a2b] dark:!text-white hover:!text-[#1e3b66] dark:hover:!text-[#a3c2d9] hover:scale-110 transition-all duration-200"
           >
-            {item}
-          </a>
+            {section.name}
+          </button>
         </Typography>
       ))}
-      <div className="flex flex-row items-center justify-center gap-32">
+
+      <div className="flex flex-row items-center justify-center gap-8 mt-2 lg:gap-16 lg:mt-0">
         <li>
           <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
         </li>
@@ -92,22 +110,21 @@ const NavbarSimple = () => {
   }, []);
 
   return (
-    <Navbar className="px-6 py-3 max-w-full bg-white rounded !rounded-0 dark:bg-[#0e1a2b] transition-colors duration-300  shadow-lg border border-[#1e3b66] border-t-0 border-x-0">
-      <div className="flex items-center justify-evenly">
-        <div data-aos="fade-right">
-          <Typography
-            as="a"
-            href="#"
-            variant="h4"
-            className="mr-4 cursor-pointer py-1.5 !text-[#0e1a2b] dark:!text-[#a3c2d9] hover:scale-105 transition-all duration-300"
-          >
-            Mustafa Tarek
-          </Typography>
-        </div>
+    <Navbar className="fixed top-0 left-0 max-w-full z-50 px-6 py-3 bg-white rounded !rounded-0 dark:bg-[#0e1a2b] transition-colors duration-300 shadow-lg border border-[#1e3b66] border-t-0 border-x-0">
+      <div className="flex items-center justify-between w-full">
+        <Typography
+          as="a"
+          href="#"
+          variant="h4"
+          className="mr-4 cursor-pointer py-1.5 !text-[#0e1a2b] dark:!text-[#a3c2d9] hover:scale-105 transition-all duration-300"
+        >
+          Mustafa Tarek
+        </Typography>
 
-        <div className="hidden lg:block" data-aos="fade-left">
+        <div className="hidden lg:block">
           <NavList darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
+
         <IconButton
           variant="text"
           className="w-6 h-6 ml-auto text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden !text-[#0e1a2b] dark:!text-white"
@@ -115,14 +132,19 @@ const NavbarSimple = () => {
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
-            <XMarkIcon className="w-6 h-6" strokeWidth={2} />
+            <XMarkIcon className="w-6 h-6" />
           ) : (
-            <Bars3Icon className="w-6 h-6" strokeWidth={2} />
+            <Bars3Icon className="w-6 h-6" />
           )}
         </IconButton>
       </div>
+
       <Collapse open={openNav}>
-        <NavList darkMode={darkMode} setDarkMode={setDarkMode} />
+        <NavList
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          closeNav={() => setOpenNav(false)}
+        />
       </Collapse>
     </Navbar>
   );
