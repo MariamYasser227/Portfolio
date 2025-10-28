@@ -21,7 +21,7 @@ module.exports = withMT({
       },
       animation: {
         typing:
-          "typing 3s ease-in-out infinite alternate, blink 0.5s step-end infinite",
+          "typing 3s ease-in-out infinite alternate, blink 0.8s step-end infinite",
       },
     },
   },

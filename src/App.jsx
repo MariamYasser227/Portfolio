@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import NavbarSimple from "./Nav/Nav";
 import Profile from "./About/Profile";
 import Work from "./Work/Work";
+import Skills from "./Skills/Skills";
 import "./index.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <NavbarSimple />
       <Profile />
       <Work />
+      <Skills />
     </div>
   );
 }
