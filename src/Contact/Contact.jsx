@@ -13,20 +13,20 @@ const Contact = () => {
         Get In Touch!
       </Typography>
 
-      <Typography className="text-base sm:text-lg !text-[#1e3b66] dark:!text-[#a3c2d9] text-center w-3/6">
+      <Typography className="text-lg !text-[#1e3b66] dark:!text-[#a3c2d9] text-center w-4/6">
         Whether it’s building high-performance software, developing AI-powered
         systems, or creating scalable web applications, I’m open to new projects
         and collaborations.
       </Typography>
 
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-2">
         <HiOutlineMail className="text-2xl md:text-4xl lg:text-6xl !text-[#0e1a2b] dark:!text-[#1e3b66]" />
         <Typography className="text-lg sm:text-xl md:text-2xl lg:text-3xl dark:text-white p-5 text-[#0e1a2b] rounded-full">
           mustafatarek104@gmail.com
         </Typography>
       </div>
 
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-2">
         <CiPhone className="text-2xl md:text-4xl lg:text-6xl !text-[#0e1a2b] dark:!text-[#1e3b66]" />
         <Typography className="text-lg sm:text-xl md:text-2xl lg:text-3xl dark:text-white p-5 text-[#0e1a2b] rounded-full">
           +201024656077
