@@ -133,7 +133,7 @@ const Projects = () => {
             className="relative flex items-center justify-center w-full p-2 sm:p-4 h-[28rem] sm:h-[30rem] md:h-[32rem] lg:h-[28rem]"
             data-aos="flip-up"
           >
-            <div className="max-w-4xl w-full p-4 sm:p-6 text-center shadow-xl dark:bg-[#1e3b66] border border-[#0e1a2b] dark:border-gray-700 rounded-3xl flex flex-col items-center">
+            <div className="max-w-4xl w-full p-4 sm:p-6 text-center shadow-xl dark:bg-[#1e3b66] rounded-3xl flex flex-col items-center">
               <Typography
                 variant="h3"
                 className="mb-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold !text-[#0e1a2b] dark:!text-white"
