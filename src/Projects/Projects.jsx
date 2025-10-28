@@ -88,7 +88,7 @@ const Projects = () => {
     >
       <Typography
         variant="h1"
-        className="mb-6 !text-[#0e1a2b] dark:!text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center"
+        className="mb-6 !text-[#0e1a2b] dark:!text-white text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-center"
         data-aos="zoom-in-up"
       >
         Projects
