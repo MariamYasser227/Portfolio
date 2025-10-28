@@ -1,5 +1,6 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 import { CiLink } from "react-icons/ci";
+
 const projects = [
   {
     name: "GPU-Accelerated Custom DBMS with CUDA",
@@ -93,11 +94,11 @@ const Projects = () => {
         Projects
       </Typography>
       <Carousel
-        className="w-full rounded-xl"
+        className="w-full overflow-hidden rounded-xl"
         prevArrow={({ handlePrev }) => (
           <button
             onClick={handlePrev}
-            className="absolute z-10 p-3 text-[#0e1a2b] transition-colors duration-300 -translate-y-1/2 bg-white rounded-full shadow-lg sm:p-4 top-1/2 left-4 sm:left-8 dark:bg-white hover:bg-gray-200 dark:hover:bg-gray-300"
+            className="absolute z-10 p-3 text-[#0e1a2b] dark:text-[#1e3b66] transition-colors duration-300 -translate-y-1/2 bg-transparent rounded-full shadow-lg sm:p-4 top-1/2 left-4 sm:left-8 hover:bg-gray-100"
           >
             ❮
           </button>
@@ -105,18 +106,34 @@ const Projects = () => {
         nextArrow={({ handleNext }) => (
           <button
             onClick={handleNext}
-            className="absolute z-10 p-3 text-[#0e1a2b] transition-colors duration-300 -translate-y-1/2 bg-white rounded-full shadow-lg sm:p-4 top-1/2 right-4 sm:right-8 dark:bg-white hover:bg-gray-200 dark:hover:bg-gray-300"
+            className="absolute z-10 p-3 text-[#0e1a2b] dark:text-[#1e3b66] transition-colors duration-300 -translate-y-1/2 bg-transparent rounded-full shadow-lg sm:p-4 top-1/2 right-4 sm:right-8 hover:bg-gray-100"
           >
             ❯
           </button>
+        )}
+        navigation={({ setActiveIndex, activeIndex, length }) => (
+          <div className="absolute z-50 flex justify-center gap-2 bottom-[-2rem] w-full">
+            {new Array(length).fill("").map((_, i) => (
+              <span
+                key={i}
+                className={`block h-3 w-3 rounded-full cursor-pointer transition-all duration-300 ${
+                  activeIndex === i
+                    ? "bg-[#0e1a2b] dark:bg-[#a3c2d9]"
+                    : "bg-gray-300 dark:bg-[#1e3b66]"
+                }`}
+                onClick={() => setActiveIndex(i)}
+              />
+            ))}
+          </div>
         )}
       >
         {projects.map((project, index) => (
           <div
             key={index}
             className="relative flex items-center justify-center w-full p-2 sm:p-4 h-[28rem] sm:h-[30rem] md:h-[32rem] lg:h-[28rem]"
+            data-aos="flip-up"
           >
-            <div className="max-w-4xl w-full p-4 sm:p-6 text-center  shadow-xl dark:bg-[#1e3b66] border border-[#0e1a2b] dark:border-gray-700 rounded-3xl flex flex-col items-center">
+            <div className="max-w-4xl w-full p-4 sm:p-6 text-center shadow-xl dark:bg-[#1e3b66] border border-[#0e1a2b] dark:border-gray-700 rounded-3xl flex flex-col items-center">
               <Typography
                 variant="h3"
                 className="mb-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold !text-[#0e1a2b] dark:!text-white"
