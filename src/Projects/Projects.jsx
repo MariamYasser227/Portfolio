@@ -161,7 +161,7 @@ const Projects = () => {
                   size="md"
                   color="white"
                   variant="text"
-                  className="!bg-[#0e1a2b] text-white hover:!bg-[#1e3b66] transition-colors duration-300"
+                  className="!bg-[#0e1a2b] text-white hover:!bg-[#a3c2d9] hover:!text-[#0e1a2b] font-bold transition-colors duration-300"
                 >
                   <div className="flex items-center justify-center gap-1">
                     <Typography className="text-xs sm:text-sm md:text-base">

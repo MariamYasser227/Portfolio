@@ -112,12 +112,12 @@ const NavbarSimple = () => {
 
   return (
     <Navbar className="fixed top-0 left-0 max-w-full z-50 px-6 py-3 bg-white rounded !rounded-0 dark:bg-[#0e1a2b] transition-colors duration-300 shadow-lg border border-[#1e3b66] border-t-0 border-x-0">
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center w-full justify-evenly">
         <Typography
           as="a"
           href="#"
           variant="h4"
-          className="mr-4 cursor-pointer py-1.5 !text-[#0e1a2b] dark:!text-[#a3c2d9] hover:scale-105 transition-all duration-300"
+          className="mr-4 cursor-pointer py-1.5 font-bold !text-[#0e1a2b] dark:!text-[#a3c2d9] hover:scale-105 transition-all duration-300"
         >
           Mustafa Tarek
         </Typography>

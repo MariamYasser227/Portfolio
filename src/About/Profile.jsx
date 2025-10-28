@@ -20,7 +20,7 @@ const Profile = () => {
             >
               Hi! I'm Mustafa Tarek
             </Typography>
-            <Typography className="text-xl sm:text-2xl !text-[#1e3b66] dark:!text-[#a3c2d9]">
+            <Typography className="text-xl sm:text-2xl !text-[#1e3b66] font-bold dark:!text-[#a3c2d9]">
               Computer Engineer
             </Typography>
             <Typography className="mt-3 text-sm sm:text-base leading-relaxed !text-[#0e1a2b] dark:!text-white">
