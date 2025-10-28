@@ -28,7 +28,7 @@ const Work = () => {
           <TimelineItem className="p-4 transition-all duration-300 shadow-lg hover:scale-105 dark:!bg-[#1e3b66]">
             <TimelineConnector />
             <TimelineHeader className="items-center gap-5">
-              <TimelineIcon className="mr-1 !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
+              <TimelineIcon className=" !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
               <div className="flex flex-col w-full gap-2 sm:flex-row sm:justify-between sm:items-center">
                 <Typography
                   variant="h6"
@@ -76,7 +76,7 @@ const Work = () => {
           <TimelineItem className="p-4 transition-all duration-300 shadow-lg hover:scale-105 dark:!bg-[#1e3b66]">
             <TimelineConnector />
             <TimelineHeader className="items-center gap-5">
-              <TimelineIcon className="mr-1 !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
+              <TimelineIcon className=" !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
               <div className="flex flex-col w-full gap-2 sm:flex-row sm:justify-between sm:items-center">
                 <Typography
                   variant="h6"
@@ -129,7 +129,7 @@ const Work = () => {
           <TimelineItem className="p-4 transition-all duration-300 shadow-lg hover:scale-105 dark:!bg-[#1e3b66]">
             <TimelineConnector />
             <TimelineHeader className="items-center gap-5">
-              <TimelineIcon className="mr-1 !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
+              <TimelineIcon className=" !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
               <div className="flex flex-col w-full gap-2 sm:flex-row sm:justify-between sm:items-center">
                 <Typography
                   variant="h6"
@@ -189,7 +189,7 @@ const Work = () => {
           <TimelineItem className="p-4 transition-all duration-300 shadow-lg hover:scale-105 dark:!bg-[#1e3b66]">
             <TimelineConnector />
             <TimelineHeader className="items-center gap-5">
-              <TimelineIcon className="mr-1 !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
+              <TimelineIcon className=" !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
               <div className="flex flex-col w-full gap-2 sm:flex-row sm:justify-between sm:items-center">
                 <Typography
                   variant="h6"
@@ -241,7 +241,7 @@ const Work = () => {
           <TimelineItem className="p-4 transition-all duration-300 shadow-lg hover:scale-105 dark:!bg-[#1e3b66]">
             <TimelineConnector />
             <TimelineHeader className="items-center gap-5">
-              <TimelineIcon className="mr-1 !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
+              <TimelineIcon className=" !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
               <div className="flex flex-col w-full gap-2 sm:flex-row sm:justify-between sm:items-center">
                 <Typography
                   variant="h6"
@@ -286,7 +286,7 @@ const Work = () => {
           <TimelineItem className="p-4 transition-all duration-300 shadow-lg hover:scale-105 dark:!bg-[#1e3b66]">
             <TimelineConnector />
             <TimelineHeader className="items-center gap-5">
-              <TimelineIcon className="mr-1 !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
+              <TimelineIcon className=" !bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
               <div className="flex flex-col w-full gap-2 sm:flex-row sm:justify-between sm:items-center">
                 <Typography
                   variant="h6"
