@@ -51,13 +51,14 @@ const NavList = ({ darkMode, setDarkMode, closeNav }) => {
     { name: "Projects", id: "projects" },
     { name: "Contact", id: "contact" },
   ];
-
   const handleScroll = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      if (closeNav) closeNav();
-    }
+    if (closeNav) closeNav();
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 200);
   };
 
   return (
