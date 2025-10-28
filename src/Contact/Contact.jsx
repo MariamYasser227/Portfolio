@@ -52,7 +52,7 @@ const Contact = () => {
         You may also find me on these platforms!
       </Typography>
       <div
-        className="flex justify-center gap-4 mt-3 mb-6 p-7 md:justify-start"
+        className="flex justify-center gap-4 mt-3 mb-6 p-9 md:justify-start"
         data-aos="zoom-in-down"
       >
         <a
