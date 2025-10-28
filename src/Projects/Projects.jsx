@@ -98,7 +98,7 @@ const Projects = () => {
         prevArrow={({ handlePrev }) => (
           <button
             onClick={handlePrev}
-            className="absolute z-10 p-3 text-[#0e1a2b] dark:text-[#1e3b66] transition-colors duration-300 -translate-y-1/2 bg-transparent rounded-full shadow-lg sm:p-4 top-1/2 left-4 sm:left-8 hover:bg-gray-100"
+            className="absolute z-10 p-3 text-[#0e1a2b] dark:text-[#a3c2d9] transition-colors duration-300 -translate-y-1/2 bg-transparent rounded-full shadow-lg sm:p-4 top-1/2 left-4 sm:left-8 hover:bg-gray-100"
           >
             ❮
           </button>
@@ -106,7 +106,7 @@ const Projects = () => {
         nextArrow={({ handleNext }) => (
           <button
             onClick={handleNext}
-            className="absolute z-10 p-3 text-[#0e1a2b] dark:text-[#1e3b66] transition-colors duration-300 -translate-y-1/2 bg-transparent rounded-full shadow-lg sm:p-4 top-1/2 right-4 sm:right-8 hover:bg-gray-100"
+            className="absolute z-10 p-3 text-[#0e1a2b] dark:text-[#a3c2d9] transition-colors duration-300 -translate-y-1/2 bg-transparent rounded-full shadow-lg sm:p-4 top-1/2 right-4 sm:right-8 hover:bg-gray-100"
           >
             ❯
           </button>
