@@ -6,9 +6,10 @@ import {
   FaNodeJs,
   FaDatabase,
   FaDocker,
-  FaGitAlt,
+  FaJenkins,
   FaCode,
   FaMicrochip,
+  FaAws
 } from "react-icons/fa";
 import {
   SiC,
@@ -23,7 +24,10 @@ import {
   SiOpencv,
   SiNumpy,
   SiPandas,
+  SiTerraform,
+  SiAnsible
 } from "react-icons/si";
+import { AiOutlineKubernetes } from "react-icons/ai";
 
 const Skills = () => {
   const skills = [
@@ -50,6 +54,12 @@ const Skills = () => {
     { icon: SiOpencv, name: "OpenCV", color: "#5c3ee8" },
     { icon: SiPandas, name: "Pandas", color: "#150458" },
     { icon: SiNumpy, name: "NumPy", color: "#013243" },
+    { icon: FaDocker, name: "Docker", color: "	#4e79a7" },
+    { icon: AiOutlineKubernetes, name: "Kubernetes", color: "#326ce5" },
+    { icon: FaJenkins, name: "Jenkins", color: "#d33833" },
+    { icon: SiTerraform, name: "Terraform", color: "#623ce4" },
+    { icon: FaAws, name: "AWS", color: "#ff9900" },
+    { icon: SiAnsible, name: "Ansible", color: "#ee0000" },
   ];
 
   return (

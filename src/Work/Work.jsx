@@ -72,6 +72,50 @@ const Work = () => {
               </div>
             </TimelineBody>
           </TimelineItem>
+          <TimelineItem className="p-4 transition-all duration-300 shadow-lg hover:scale-105 dark:!bg-[#1e3b66]">
+            <TimelineConnector />
+            <TimelineHeader className="items-center gap-5">
+              <TimelineIcon className="!bg-[#1e3b66] dark:!bg-[#a3c2d9]" />
+              <div className="flex flex-col w-full gap-2 sm:flex-row sm:justify-between sm:items-center">
+                <Typography
+                  variant="h6"
+                  className="flex-1 break-words !text-[#0e1a2b] dark:!text-white"
+                >
+                  ITI Student - 9 Months Program,
+                  <Typography
+                    component="span"
+                    className="!text-[#1e3b66] dark:!text-[#a3c2d9] !inline ml-2"
+                  >
+                    Cloud Platform Development
+                  </Typography>
+                </Typography>
+                <Typography
+                  variant="h6"
+                  className="flex-shrink-0 whitespace-nowrap !text-gray-700 dark:!text-gray-400"
+                >
+                  OCT 2025 – Present
+                </Typography>
+              </div>
+            </TimelineHeader>
+            <TimelineBody>
+              <div className="flex flex-col gap-2">
+                <Typography
+                  variant="small"
+                  className="!text-[#0e1a2b] dark:!text-white"
+                >
+                  ○ Designed, deployed, and managed cloud-based applications
+                  using AWS, Azure, and Docker/Kubernetes.
+                </Typography>
+                <Typography
+                  variant="small"
+                  className="!text-[#0e1a2b] dark:!text-white"
+                >
+                  ○ Built and automated CI/CD pipelines with Jenkins, GitHub
+                  Actions, and Terraform to manage infrastructure as code.
+                </Typography>
+              </div>
+            </TimelineBody>
+          </TimelineItem>
 
           <TimelineItem className="p-4 transition-all duration-300 shadow-lg hover:scale-105 dark:!bg-[#1e3b66]">
             <TimelineConnector />
