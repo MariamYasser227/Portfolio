@@ -13,7 +13,7 @@ import {
 const Work = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center w-screen gap-12 overflow-x-hidden overflow-y-visible"
+      className="flex flex-col items-center justify-center w-screen gap-12 mb-20 overflow-x-hidden overflow-y-visible"
       id="work"
       data-aos="zoom-in-up"
     >
@@ -23,7 +23,7 @@ const Work = () => {
       >
         Work Experience
       </Typography>
-      <div className="w-full px-4 sm:w-10/12 md:w-8/12 lg:w-7/12">
+      <div className="w-full px-4 sm:w-10/12 md:w-8/12 lg:w-8/12">
         <Timeline className="space-y-8">
           <TimelineItem className="p-4 transition-all duration-300 shadow-lg hover:scale-105 dark:!bg-[#1e3b66]">
             <TimelineConnector />
@@ -327,7 +327,7 @@ const Work = () => {
             </TimelineBody>
           </TimelineItem>
 
-          <TimelineItem className="p-4 mb-12 transition-all duration-300 !shadow-2xl hover:scale-105 dark:!bg-[#1e3b66]">
+          <TimelineItem className="p-4 transition-all duration-300 !shadow-lg hover:scale-105 dark:!bg-[#1e3b66]">
             <TimelineConnector />
 
             <TimelineHeader className="items-center gap-5">
